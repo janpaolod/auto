@@ -64,6 +64,26 @@ GIT
       jquery-ui-rails
       spree_core (~> 2.3.0)
 
+GIT
+  remote: https://github.com/spree/spree_auth_devise.git
+  revision: 2218d9b9b38bf80b6a7365f82b81badde23262e2
+  branch: 2-3-stable
+  specs:
+    spree_auth_devise (2.2.0)
+      devise (~> 3.2.3)
+      devise-encryptable (= 0.1.2)
+      json
+      multi_json
+      spree_core (~> 2.3.0)
+
+GIT
+  remote: https://github.com/spree/spree_gateway.git
+  revision: 2f59fc0db09c1f806ce73f3476ffb5b4533e2e8b
+  branch: 2-3-stable
+  specs:
+    spree_gateway (2.3.0.beta)
+      spree_core (~> 2.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -113,6 +133,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
+    bcrypt (3.1.10)
     builder (3.2.2)
     cancancan (1.9.2)
     canonical-rails (0.0.7)
@@ -141,6 +162,14 @@ GEM
       nokogiri (~> 1.6.0)
       polyglot
       rails (>= 3.1)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+    devise-encryptable (0.1.2)
+      devise (>= 2.1.0)
     erubis (2.7.0)
     execjs (2.3.0)
     ffaker (1.32.1)
@@ -188,6 +217,7 @@ GEM
       json (~> 1.7)
       money (< 7.0.0)
       nokogiri (~> 1.4)
+    orm_adapter (0.5.0)
     paperclip (4.2.1)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -268,6 +298,8 @@ GEM
       activesupport (>= 3.2)
       railties (>= 3.2)
       tzinfo
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -280,7 +312,9 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spree!
+  spree_auth_devise!
   spree_fancy!
+  spree_gateway!
   spring
   sqlite3
   turbolinks
